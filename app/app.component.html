@@ -6,6 +6,8 @@
 
 <p>Start editing to see some {{ name }} {{ version }} magic happen 😃</p>
 
-<lifecycle>
-  <content-child id="7"></content-child>
-</lifecycle>
+<div *ngIf="version < 10" id="lifecycle-container">
+  <lifecycle>
+    <content-child id="7"></content-child>
+  </lifecycle>
+</div>

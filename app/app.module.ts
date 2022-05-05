@@ -1,3 +1,4 @@
+import {CommonModule} from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -8,6 +9,6 @@ import { LifecycleModule } from './lifecycle';
 @NgModule({
   bootstrap: [AppComponent],
   declarations: [AppComponent],
-  imports: [CoreModule, HelloFrameworkModule, LifecycleModule],
+  imports: [CommonModule, CoreModule, HelloFrameworkModule, LifecycleModule],
 })
 export class AppModule {}

@@ -4,12 +4,14 @@ import {
   AfterViewChecked,
   AfterViewInit,
   Component,
+  ContentChild,
   DoCheck,
   OnChanges,
   OnDestroy,
   OnInit,
   ViewChild,
 } from '@angular/core';
+import { ContentchildComponent } from './contentchild.component';
 import { ViewchildComponent } from './viewchild.component';
 
 @Component({
@@ -27,6 +29,7 @@ export class LifecycleComponent
     OnChanges,
     OnInit
 {
+  @ContentChild(ContentchildComponent) contentChild: ContentchildComponent;
   @ViewChild(ViewchildComponent) viewChild: ViewchildComponent;
 
   ngOnChanges() {
