@@ -1,0 +1,7 @@
+{
+  "apps": [
+    {
+      "styles": ["scss/styles.scss"]
+    }
+  ]
+}
